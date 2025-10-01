@@ -5,15 +5,15 @@ int main() {
     string p;
     cin >> p;
  
-    bool producesOutput = false;
+    bool Output = false;
     for (char c : p) {
         if (c == 'H' || c == 'Q' || c == '9') {
-            producesOutput = true;
+          Output = true;
             break;
         }
     }
  
-    if (producesOutput)
+    if (Output)
         cout << "YES";
     else
         cout << "NO";
